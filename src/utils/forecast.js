@@ -10,7 +10,7 @@ const forecast = (longitude, latitude, callback) => {
             callback('No location found! please provide valid input!', undefined)
         } else {
             const data = body.current;
-            callback(undefined, `${data.weather_descriptions[0]}. It's ${data.temperature} degrees out there. it feels like ${data.feelslike} degrees out.`)
+            callback(undefined, `It's ${data.temperature} degrees out there. it feels like ${data.feelslike} degrees. Weather forecast is ${data.weather_descriptions[0]}. Current wind speed is ${data.wind_speed} km/h and humidity is ${data.humidity}%.`)
         }
     })
 } 
