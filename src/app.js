@@ -37,7 +37,7 @@ app.get('/help', (req, res) => {
     res.render('help', {
         title: 'Help Page',
         name: 'Dhiraj Jha',
-        msg: 'This message is dynamic!'
+        msg: 'How to get Help!'
     })
 })
 
