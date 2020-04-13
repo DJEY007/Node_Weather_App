@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>{{title}}</title>    
+<link rel="icon" href="/img/weather.png">
+<link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+        <p>Content for body</p>
+        <form>
+            <input placeholder="Location...">
+            <button>Search</button>
+        </form>
+        <p id="msg-1"></p>
+        <p id="msg-2"></p>
+    </div>
+    {{>footer}}
+<script src="/js/script.js"></script>
+</body>
+
+</html>
